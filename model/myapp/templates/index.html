@@ -1,0 +1,12 @@
+<h1>heading</h1>
+
+{%for i in info%}
+{{i.id}} <br>
+{{i.text}} <br>
+{{i.title}}<br>
+<br>
+
+<a href = "{% url 'delete' i.id %}"> Delete</a>
+
+<hr>
+{%endfor%}
